@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{353D6B14-4539-45BA-8A03-B61D11C50F37}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.TestGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestGame\UI.cs">
+    <Files>
+      <File FileName="TestGame\Game.cs" Line="20" Column="5" />
+      <File FileName="TestGame\TextController.cs" Line="28" Column="5" />
+      <File FileName="TestGame\State.cs" Line="56" Column="49" />
+      <File FileName="TestGame\UI.cs" Line="54" Column="46" />
+      <File FileName="TestGame\CommandParser.cs" Line="13" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

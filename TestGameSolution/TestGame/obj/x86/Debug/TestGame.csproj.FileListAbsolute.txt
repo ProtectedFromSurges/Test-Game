@@ -1,0 +1,4 @@
+C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\bin\Debug\TestGame.exe
+C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\bin\Debug\TestGame.pdb
+C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\obj\x86\Debug\TestGame.exe
+C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\obj\x86\Debug\TestGame.pdb
