@@ -11,6 +11,8 @@ namespace TestGame
 			Update();
 		}
 
+		// Move state to this class
+
 		public static void Update()
 		{
 			State currentState = new State();
