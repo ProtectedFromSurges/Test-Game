@@ -2,3 +2,7 @@ C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\bin\Debug\TestGame.e
 C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\bin\Debug\TestGame.pdb
 C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\obj\x86\Debug\TestGame.exe
 C:\Users\sh515\Documents\Projects\TestGameSolution\TestGame\obj\x86\Debug\TestGame.pdb
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\TestGame.exe
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\TestGame.pdb
+C:\git\Test-Game\TestGameSolution\TestGame\obj\x86\Debug\TestGame.exe
+C:\git\Test-Game\TestGameSolution\TestGame\obj\x86\Debug\TestGame.pdb

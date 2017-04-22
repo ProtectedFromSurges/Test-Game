@@ -21,10 +21,10 @@ namespace TestGame
 			}
 		}
 
-		public static void Update(int[] score)
+		public static void Update()
 		{
 			// Resetting the border and sidebar, the main window is be cleared by the text controller
-			string[] border = System.IO.File.ReadAllLines(@"C:\\Users\\sh515\\Documents\\Projects\\TestGameSolution\\TestGame\\Assets\\MainBorderUpdate.txt");
+			string[] border = System.IO.File.ReadAllLines(@"..\\..\\Assets\\MainBorderUpdate.txt");
 			int currentLine = 0;
 			foreach (string line in border)
 			{
@@ -33,7 +33,7 @@ namespace TestGame
 				currentLine++;
 			}
 
-			string[] sidebar = System.IO.File.ReadAllLines(@"C:\\Users\\sh515\\Documents\\Projects\\TestGameSolution\\TestGame\\Assets\\Sidebar.txt");
+			string[] sidebar = System.IO.File.ReadAllLines(@"..\\..\\Assets\\Sidebar.txt");
 			currentLine = 0;
 			foreach (string line in sidebar)
 			{
@@ -43,6 +43,7 @@ namespace TestGame
 			}
 
 			// Print current score and total score
+			int[] score = Game.currentState.UIScore();
 			if (score[0] <= score[1])
 			{
 				Console.SetCursorPosition(68, 6);

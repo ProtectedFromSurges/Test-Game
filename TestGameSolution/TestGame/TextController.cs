@@ -5,9 +5,9 @@ namespace TestGame
 {
 	public class TextController
 	{
-		public static string Update(List<string> inputHistory)
+		public static void Update()
 		{
-			List<string> history = inputHistory;
+			List<string> history = Game.currentState.InputHistory;
 
 			// Clear window
 			for (int i = 0; i< 20; i++)
@@ -40,8 +40,9 @@ namespace TestGame
 				// Trimming input
 				input = input.Substring(0, 54);
 			}
+			history.Add(input);
 
-			return input;
+			Game.currentState.InputHistory = history;
 		}
 	}
 }

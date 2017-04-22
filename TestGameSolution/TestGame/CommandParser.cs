@@ -3,9 +3,9 @@ namespace TestGame
 {
 	public class CommandParser
 	{
-		public static string Update(string lastInput)
+		public static void Update()
 		{
-			string input = lastInput;
+			string input = Game.currentState.LastInput;
 
 			// Somehow handle commands, maybe checking the first part of input?
 			// Then have the commands call another class? Result.Update()??????

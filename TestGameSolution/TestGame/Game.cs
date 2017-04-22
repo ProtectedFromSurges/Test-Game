@@ -7,27 +7,24 @@ namespace TestGame
 	{
 		public static void Launch()
 		{
-			UI.DrawBorder(@"C:\\Users\\sh515\\Documents\\Projects\\TestGameSolution\\TestGame\\Assets\\MainBorder.txt", 0, 0);
+			UI.DrawBorder(@"..\\..\\Assets\\MainBorder.txt", 0, 0);
 			Update();
 		}
 
+		public static State currentState = new State();
+
 		public static void Update()
 		{
-			State currentState = new State();
-
 			bool isRunning = true;
 			while (isRunning)
 			{
-				// This will be added to the input history
-				List<string> historyToAdd = new List<string>();
-
 				// Running TextController update, and updating inputHistory in currentState
-				historyToAdd.Add(TextController.Update(currentState.InputHistory));
+				TextController.Update();
 
 				// Running the other updaters
 				currentState.Update();
-				historyToAdd.Add(CommandParser.Update(currentState.LastInput));
-				UI.Update(currentState.UIScore());
+				CommandParser.Update();
+				UI.Update();
 			}
 		}
 	}
