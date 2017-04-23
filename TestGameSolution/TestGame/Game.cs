@@ -8,6 +8,7 @@ namespace TestGame
 		public static void Launch()
 		{
 			UI.DrawBorder(@"..\\..\\Assets\\MainBorder.txt", 0, 0);
+			UI.Update();
 			Update();
 		}
 

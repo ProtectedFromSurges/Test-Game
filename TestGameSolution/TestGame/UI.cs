@@ -43,17 +43,8 @@ namespace TestGame
 			}
 
 			// Print current score and total score
-			int[] score = Game.currentState.UIScore();
-			if (score[0] <= score[1])
-			{
-				Console.SetCursorPosition(68, 6);
-				Console.Write(score[0] + "/" + score[1]);
-			}
-			else
-			{
-				Console.SetCursorPosition(68, 6);
-				Console.Write(score[0] + "/" + score[0]);
-			}
+			Console.SetCursorPosition(68, 6);
+			Console.Write(Game.currentState.Score + "/" + Game.currentState.scoreMaximum);
 		}
 	}
 }
