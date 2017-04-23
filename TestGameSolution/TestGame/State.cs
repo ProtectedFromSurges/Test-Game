@@ -34,13 +34,17 @@ namespace TestGame
 		}
 
 		// Maximum score
-		private int scoreMaximum = 1;
-		private int scoreSecret = 1;
+		int scoreSecret = 1;
+		public int scoreMaximum
+		{
+			get;
+			private set;
+		} = 1;
 
 		public void AddScore(int pointsToAdd)
 		{
 			// Checks score against maximum, then adds it
-			if (this.Score + pointsToAdd > scoreMaximum + scoreSecret)
+			if (this.Score + pointsToAdd > scoreMaximum)
 			{
 				throw new Exception("Player score exceeds maximum score");
 			}
@@ -50,11 +54,19 @@ namespace TestGame
 			}
 		}
 
-		// Returns array for the purpose of printing score
-		public int[] UIScore()
+		public void AddScore(int pointsToAdd, bool isSecret)
 		{
-			int[] score = new int[] { Score, scoreMaximum };
-			return score;
+			// Checks score against maximum, then adds it
+			if (this.Score + pointsToAdd > scoreMaximum + scoreSecret)
+			{
+				throw new Exception("Player secret score exceeds maximum score");
+			}
+			else
+			{
+				Score += pointsToAdd;
+				scoreMaximum += pointsToAdd;
+				scoreSecret -= pointsToAdd;
+			}
 		}
 
 		// Latest player input
