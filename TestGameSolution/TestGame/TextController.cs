@@ -43,6 +43,16 @@ namespace TestGame
 			history.Add(input);
 
 			Game.currentState.InputHistory = history;
+
+			// Running the current level
+			switch (Game.currentState.CurrentLevel)
+			{
+				case 1:
+					LevelOne.Update();
+					break;
+				default:
+					break;	
+			}
 		}
 
 		public static void AddOutput(string textToAdd)

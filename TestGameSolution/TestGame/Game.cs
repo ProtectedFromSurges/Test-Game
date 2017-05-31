@@ -5,14 +5,16 @@ namespace TestGame
 {
 	public class Game
 	{
+		public static State currentState = new State();
+
 		public static void Launch()
 		{
 			UI.DrawBorder(@"..\\..\\Assets\\MainBorder.txt", 0, 0);
 			UI.Update();
-			Update();
-		}
-
-		public static State currentState = new State();
+			TextController.AddOutput("Welcome to Test Game!");
+			TextController.AddOutput("Please type START to start the game");
+			currentState.CurrentLevel = 1;
+			Update();		}
 
 		public static void Update()
 		{
@@ -24,7 +26,6 @@ namespace TestGame
 
 				// Running the other updaters
 				currentState.Update();
-				CommandParser.Update();
 				UI.Update();
 			}
 		}

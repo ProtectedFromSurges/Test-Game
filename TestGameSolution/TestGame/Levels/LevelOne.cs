@@ -1,19 +1,19 @@
 ﻿using System;
 namespace TestGame
 {
-	public class CommandParser
+	public class LevelOne
 	{
 		public static void Update()
 		{
-			string[] input = Game.currentState.LastInput.Split(' ');
+			// Grabs the latest input from InputHistory and splits it
+			string lastInput = Game.currentState.InputHistory[Game.currentState.InputHistory.Count - 1];
+			string[] input = lastInput.Split(' ');
 
-			// Somehow handle commands, maybe checking the first part of input?
-			// Then have the commands call another class? Result.Update()??????
-
-			// Do a test score command first, + secret
+			// Checking input against all commands for the level
 			switch (input[0].ToLower())
 			{
 				case "score":
+					// Add a check for repeats with real commands
 					Game.currentState.AddScore(1);
 					TextController.AddOutput("Congratulations! Have a point!");
 					break;
@@ -22,9 +22,7 @@ namespace TestGame
 					TextController.AddOutput("Very sneaky, well done");
 					break;
 				case "start":
-					// Launch level 1?
-					TextController.AddOutput("In the future, this will launch the game");
-					TextController.AddOutput("Thanks for playing!");
+					TextController.AddOutput("You are in a spaceship???");
 					break;
 				default:
 					TextController.AddOutput("I don't recognise that command, try again");

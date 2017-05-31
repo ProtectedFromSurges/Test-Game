@@ -20,17 +20,28 @@ namespace TestGame
 			}
 		}
 
-		private int _score = 0;
-		public int Score
+		int maxLevel = 1;
+		private int _currentLevel;
+		public int CurrentLevel
 		{
 			get
 			{
-				return _score;
+				return _currentLevel;
 			}
-			private set
+			set
 			{
-				_score = value;
+				if ((value <= maxLevel) && (value > 0))
+				{
+					_currentLevel = value;
+				}
 			}
+		}
+
+		private int _score = 0;
+		public int Score
+		{
+			get;
+			private set;
 		}
 
 		// Maximum score
@@ -69,20 +80,6 @@ namespace TestGame
 			}
 		}
 
-		// Latest player input
-		private string _lastInput;
-		public string LastInput
-		{
-			get
-			{
-				return _lastInput;
-			}
-			private set
-			{
-				_lastInput = value;
-			}
-		}
-
 		public void AddHistory(List<string> historyToAdd)
 		{
 			foreach (string item in historyToAdd)
@@ -93,8 +90,7 @@ namespace TestGame
 
 		public void Update()
 		{
-			// Grabs the latest input from InputHistory
-			this.LastInput = this.InputHistory[this.InputHistory.Count - 1];
+			
 		}
 	}
 }

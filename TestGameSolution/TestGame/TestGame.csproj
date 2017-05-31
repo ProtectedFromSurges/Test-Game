@@ -38,7 +38,10 @@
     <Compile Include="Game.cs" />
     <Compile Include="TextController.cs" />
     <Compile Include="State.cs" />
-    <Compile Include="CommandParser.cs" />
+    <Compile Include="Levels\LevelOne.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Levels\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
