@@ -44,5 +44,23 @@ namespace TestGame
 
 			Game.currentState.InputHistory = history;
 		}
+
+		public static void AddOutput(string textToAdd)
+		{
+			List<string> listToAdd = new List<string>();
+			string text = textToAdd;
+
+			// Splitting output into multiple lines if necessary
+			while (text.Length > 54)
+			{
+				listToAdd.Add(text.Substring(0, 54));
+				text = text.Substring(54);
+			}
+			// Adding the remaining text
+			listToAdd.Add(text);
+
+			// Adding all the lines to the input history (should probably change that name now)
+			Game.currentState.InputHistory.AddRange(listToAdd);
+		}
 	}
 }

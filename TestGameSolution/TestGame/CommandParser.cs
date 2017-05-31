@@ -15,9 +15,12 @@ namespace TestGame
 			{
 				case "score":
 					Game.currentState.AddScore(1);
+					TextController.AddOutput("Congratulations! Have a point!");
 					break;
 				case "secret":
 					Game.currentState.AddScore(1, true);
+					TextController.AddOutput("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo" +
+					                         "ooooooooooooooooooooooooooooooooooooooooooots of text");
 					break;
 				default:
 					break;
