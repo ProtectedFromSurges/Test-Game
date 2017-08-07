@@ -6,3 +6,10 @@ C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\TestGame.exe
 C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\TestGame.pdb
 C:\git\Test-Game\TestGameSolution\TestGame\obj\x86\Debug\TestGame.exe
 C:\git\Test-Game\TestGameSolution\TestGame\obj\x86\Debug\TestGame.pdb
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\mscorlib.dll
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\normidna.nlp
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\normnfc.nlp
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\normnfd.nlp
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\normnfkc.nlp
+C:\git\Test-Game\TestGameSolution\TestGame\bin\Debug\normnfkd.nlp
+C:\git\Test-Game\TestGameSolution\TestGame\obj\x86\Debug\TestGame.csprojResolveAssemblyReference.cache

@@ -8,7 +8,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="TestGame\TextController.cs">
     <Files>
       <File FileName="TestGame\Game.cs" Line="29" Column="5" />
-      <File FileName="TestGame\TextController.cs" Line="64" Column="4" />
+      <File FileName="TestGame\TextController.cs" Line="67" Column="1" />
       <File FileName="TestGame\State.cs" Line="92" Column="4" />
       <File FileName="TestGame\UI.cs" Line="47" Column="80" />
       <File FileName="TestGame\CommandParser.cs" Line="23" Column="88" />
